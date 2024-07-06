@@ -8,14 +8,10 @@ The Complete JavaScript Course 2024: From Zero to Expert! - [Course Page on Udem
 
 Use these accounts:
 
-Username: js
-Password: 1111
+Username: js - Password: 1111
 
-Username: jd
-Password: 2222
+Username: jd - Password: 2222
 
-Username: stw
-Password: 3333
+Username: stw - Password: 3333
 
-Username: ss
-Password: 4444
+Username: ss - Password: 4444
