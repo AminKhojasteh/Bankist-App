@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+  @media screen and (max-width: 55em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #e9ecef; }
+
+.nav {
+  padding: 2.4rem 4.8rem;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center; }
+  @media screen and (max-width: 55em) {
+    .nav {
+      grid-template-columns: max-content 1fr;
+      row-gap: 1.6rem; } }
+  .nav__msg {
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: 500; }
+  .nav__logo {
+    width: 4.8rem;
+    justify-self: center; }
+    @media screen and (max-width: 55em) {
+      .nav__logo {
+        justify-self: end; } }
+  .nav__sgn-in {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2rem; }
+    .nav__sgn-in__inp {
+      border: 0.1rem solid #e9ecef;
+      border-radius: 10rem;
+      padding: 0.4rem 0;
+      font-family: inherit;
+      font-size: 1.6rem;
+      color: #343a40;
+      text-align: center;
+      width: 16rem;
+      transition: border 0.3s; }
+      .nav__sgn-in__inp::placeholder {
+        color: #ced4da; }
+      .nav__sgn-in__inp:focus {
+        outline: none;
+        border: 0.1rem solid #868e96; }
+    .nav__sgn-in__btn {
+      border: none;
+      background: none;
+      font-size: 2.4rem;
+      color: #343a40;
+      cursor: pointer; }
+      .nav__sgn-in__btn:focus {
+        outline: none; }
+
+.balance {
+  padding: 2.4rem 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .balance__curr__lbl {
+    font-size: 2.8rem;
+    color: #343a40;
+    font-weight: 400; }
+  .balance__curr__date-time {
+    font-size: 1.6rem;
+    color: #868e96; }
+  .balance__money {
+    font-size: 4.2rem;
+    color: #343a40;
+    font-weight: 500; }
+
+.money {
+  padding: 0rem 6.4rem 3.2rem 6.4rem;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 1.6rem; }
+  @media screen and (max-width: 55em) {
+    .money {
+      grid-template-columns: 100%;
+      row-gap: 2.4rem; } }
+  .money__transact {
+    height: 50rem;
+    overflow: scroll;
+    border-radius: 0.8rem; }
+    .money__transact__itm {
+      padding: 1.6rem 2.4rem;
+      background-color: #f8f9fa;
+      border-bottom: 0.1rem solid #e9ecef;
+      display: grid;
+      grid-template-columns: 4fr 3fr 3fr;
+      align-items: center; }
+      .money__transact__itm__info {
+        color: #f8f9fa;
+        font-size: 1.2rem;
+        border-radius: 10rem;
+        padding: 0.4rem 1.6rem;
+        justify-self: start;
+        width: 14rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem; }
+      .money__transact__itm__date {
+        font-size: 1.2rem;
+        color: #343a40;
+        justify-self: center; }
+      .money__transact__itm__num {
+        font-size: 1.8rem;
+        color: #343a40;
+        justify-self: end; }
+  .money__request {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .money__request__itm {
+      border-radius: 0.8rem;
+      padding: 2.8rem 3.2rem; }
+      .money__request__itm--transfer {
+        background-image: linear-gradient(135deg, #fcc419, #f59f00); }
+      .money__request__itm--loan {
+        background-image: linear-gradient(135deg, #51cf66, #37b24d); }
+      .money__request__itm--close-account {
+        background-image: linear-gradient(135deg, #ff6b6b, #f03e3e); }
+      .money__request__itm__title {
+        font-size: 1.8rem;
+        color: #343a40;
+        margin-bottom: 1.6rem; }
+      .money__request__itm__form--transfer {
+        display: grid;
+        grid-template-columns: 3fr 3fr 1fr;
+        column-gap: 0.8rem;
+        row-gap: 0.4rem; }
+      .money__request__itm__form--loan {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        column-gap: 0.8rem;
+        row-gap: 0.4rem; }
+      .money__request__itm__form--close-account {
+        display: grid;
+        grid-template-columns: 3fr 3fr 1fr;
+        column-gap: 0.8rem;
+        row-gap: 0.4rem; }
+      .money__request__itm__form__inp {
+        border: none;
+        font-family: inherit;
+        border-radius: 0.8rem;
+        text-align: center;
+        color: #343a40;
+        font-size: 1.6rem;
+        width: 100%; }
+        .money__request__itm__form__inp:focus {
+          outline: none; }
+        .money__request__itm__form__inp--transfer {
+          background-color: #ffec99; }
+          .money__request__itm__form__inp--transfer:focus {
+            background-color: #fff9db; }
+        .money__request__itm__form__inp--loan {
+          background-color: #b2f2bb; }
+          .money__request__itm__form__inp--loan:focus {
+            background-color: #ebfbee; }
+        .money__request__itm__form__inp--close-account {
+          background-color: #ffc9c9; }
+          .money__request__itm__form__inp--close-account:focus {
+            background-color: #fff5f5; }
+      .money__request__itm__form__btn {
+        padding: 0rem 1.6rem;
+        font-size: 1.8rem;
+        background-color: #f8f9fa;
+        border: none;
+        height: 3.2rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        transition: border 0.3s; }
+        .money__request__itm__form__btn:active {
+          background-color: #e9ecef; }
+      .money__request__itm__form__lbl {
+        font-size: 1.4rem;
+        color: #343a40;
+        justify-self: center; }
+  .money__totals {
+    padding: 0 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 4rem);
+    align-items: center; }
+    .money__totals__txt {
+      font-size: 1.4rem;
+      color: #343a40; }
+    .money__totals__num {
+      font-size: 2.4rem; }
+      .money__totals__num--interest {
+        color: #37b24d; }
+      .money__totals__num--in {
+        color: #37b24d; }
+      .money__totals__num--out {
+        color: #f03e3e; }
+    .money__totals__out {
+      justify-self: end; }
+    .money__totals__sort {
+      justify-self: end;
+      font-size: 1.6rem;
+      color: #343a40;
+      cursor: pointer;
+      transition: border 0.3s; }
+      .money__totals__sort:hover {
+        color: #868e96; }
+  .money__time-out {
+    justify-self: end;
+    align-self: end;
+    font-size: 1.2rem;
+    color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 18.2rem; }
+    .money__time-out__time {
+      font-weight: 600; }
+
+.deposit {
+  background-color: #37b24d; }
+
+.withdrawal {
+  background-color: #f03e3e; }
+
+.hidden {
+  opacity: 0; }
+
+.remove {
+  display: none; }

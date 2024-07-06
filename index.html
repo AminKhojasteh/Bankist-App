@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bankist</title>
+    <link rel="icon" href="icon/icon.png" />
+  </head>
+  <body>
+    <section class="nav">
+      <p class="nav__msg">Log in to get started</p>
+      <img src="logo/logo.png" alt="Bankist logo" class="nav__logo" />
+      <form class="nav__sgn-in">
+        <input
+          type="text"
+          placeholder="USER"
+          class="nav__sgn-in__inp nav__sgn-in__inp--user"
+        />
+        <input
+          type="text"
+          placeholder="PIN"
+          class="nav__sgn-in__inp nav__sgn-in__inp--pin"
+        />
+        <button class="nav__sgn-in__btn">&rarr;</button>
+      </form>
+    </section>
+
+    <section class="balance remove">
+      <div class="balance__curr">
+        <p class="balance__curr__lbl">Current balance</p>
+        <p class="balance__curr__date-time"></p>
+      </div>
+      <p class="balance__money">$25952.59</p>
+    </section>
+
+    <section class="money remove">
+      <div class="money__transact"></div>
+      <div class="money__request">
+        <div class="money__request__itm money__request__itm--transfer">
+          <h3 class="money__request__itm__title">Transfer money</h3>
+          <form
+            class="money__request__itm__form money__request__itm__form--transfer"
+          >
+            <input
+              type="text"
+              class="money__request__itm__form__inp money__request__itm__form__inp--transfer money__request__itm__form__inp--transfer--user"
+            />
+            <input
+              type="number"
+              class="money__request__itm__form__inp money__request__itm__form__inp--transfer money__request__itm__form__inp--transfer--amount"
+            />
+            <button
+              class="money__request__itm__form__btn money__request__itm__form__btn--transfer"
+            >
+              &rarr;
+            </button>
+            <label class="money__request__itm__form__lbl">Transfer to</label>
+            <label class="money__request__itm__form__lbl">Amount</label>
+          </form>
+        </div>
+        <div class="money__request__itm money__request__itm--loan">
+          <h3 class="money__request__itm__title">Request loan</h3>
+          <form
+            class="money__request__itm__form money__request__itm__form--loan"
+          >
+            <input
+              type="number"
+              class="money__request__itm__form__inp money__request__itm__form__inp--loan"
+            />
+            <button
+              class="money__request__itm__form__btn money__request__itm__form__btn--loan"
+            >
+              &rarr;
+            </button>
+
+            <label class="money__request__itm__form__lbl">Amount</label>
+          </form>
+        </div>
+        <div class="money__request__itm money__request__itm--close-account">
+          <h3 class="money__request__itm__title">Close account</h3>
+          <form
+            class="money__request__itm__form money__request__itm__form--close-account"
+          >
+            <input
+              type="text"
+              class="money__request__itm__form__inp money__request__itm__form__inp--close-account money__request__itm__form__inp--close-account--user"
+            />
+            <input
+              type="password"
+              class="money__request__itm__form__inp money__request__itm__form__inp--close-account money__request__itm__form__inp--close-account--pin"
+            />
+            <button
+              class="money__request__itm__form__btn money__request__itm__form__btn--close-account"
+            >
+              &rarr;
+            </button>
+            <label class="money__request__itm__form__lbl">Confirm user</label>
+            <label class="money__request__itm__form__lbl">Confirm PIN</label>
+          </form>
+        </div>
+      </div>
+
+      <div class="money__totals">
+        <div class="money__totals__interest">
+          <span class="money__totals__interest__interest money__totals__txt"
+            >INTEREST
+          </span>
+          <span
+            class="money__totals__interest__num money__totals__num money__totals__num--interest"
+            >$323.46</span
+          >
+        </div>
+        <div class="money__totals__sort">
+          <span class="money__totals__sort__arr-dwn">&darr;</span>
+          <span class="money__totals__sort__arr-up remove">&uarr;</span>
+          <span class="money__totals__sort__txt">SORT</span>
+        </div>
+        <div class="money__totals__in">
+          <span class="money__totals__in__in money__totals__txt">IN </span>
+          <span
+            class="money__totals__in__num money__totals__num money__totals__num--in"
+            >$27035.20</span
+          >
+        </div>
+        <div class="money__totals__out">
+          <span class="money__totals__out__out money__totals__txt">OUT </span>
+          <span
+            class="money__totals__out__num money__totals__num money__totals__num--out"
+            >$21082.61</span
+          >
+        </div>
+      </div>
+      <div class="money__time-out">
+        <span class="money__time-out__txt">You will be logged out in</span>
+        <span class="money__time-out__time">10:00</span>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
